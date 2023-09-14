@@ -1,10 +1,5 @@
 version: 0.2
-
 phases:
-  install:
-    runtime-versions:
-      aws-cli: latest
-
   build:
-    commands:
+    commands:      
       - aws s3 cp index.html s3://luit-gold-sept-2023-cicd-beta/index.html --acl public-read
